@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol{
+    list-style: none;
+}
+html,
+body{
+    width:100%;
+    height: 100%;
+}
+#base{
+    max-width: 1400px;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color: #424242;
+}
+
+/* 消除myInfo和experience带来的浮动影响 */
+#base::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#base .myInfo{
+    float: left;
+    width: 500px;
+    height: 500px;
+    /* background-color: aliceblue; */
+}
+
+#base .myInfo img{
+    display: inline-block;
+    width: 215px;
+    height: 300px;
+    border: 10px solid yellow;
+    border-radius: 50%;
+}
