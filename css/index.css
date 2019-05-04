@@ -8,7 +8,6 @@ ol{
 }
 html,
 body{
-    position: relative;
     width:100%;
     height: 100%;
     background-color: #ebe6e6;
@@ -41,23 +40,90 @@ body{
 }
 
 #base{
-    display: inline-block;
+    position: absolute;
     width: 100%;
     min-height: 100%;
     margin: 0 auto;
     /* background: linear-gradient(to left bottom, #9e43ff, #fd9adb, #d9a25e); */
-    background: linear-gradient(to left bottom, #0c4ab1, #6176ff,#8a99ff);
-    opacity: 0.6;
+    background: linear-gradient(
+        to left bottom,
+        rgba(12,74,177,.6),
+        rgba(97,118,255,.6),
+        rgba(138,153,255,.6)
+        );
 }
 
 #base .content{
-    width: 1200px;
+    width: 1000px;
     margin: 100px auto;
-    background-color: #fff;
+    background-color: #ebe6e662;
+    color: #fff;
 }
 
 #base .content::after{
     content: "";
     display: block;
     clear: both;
+}
+
+#base .content p{
+    width: 100px;
+    height: 32px;
+    background-color: #424242;
+    font-size: 18px;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#base .content .float{
+    float: left;
+}
+
+#base .content .picture{
+    margin: 40px;
+}
+
+#base .content .picture img{
+    width: 215px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+#base .content .basic-information{
+    width: 660px;
+    margin: 40px 20px 10px 20px;
+}
+
+.basic-information .person-info,
+.basic-information .job-intention,
+.basic-information .edu-experience{
+    margin: 20px 20px 20px 0;
+}
+
+.basic-information .person-info::after,
+.basic-information .job-intention::after,
+.basic-information .edu-experience::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.basic-information .person-info li,
+.basic-information .job-intention li,
+.basic-information .edu-experience li{
+    width: 260px;
+    height: 32px;
+    text-align: left;
+    line-height: 32px;
+    padding-left:2em; 
+    /* background-color: azure; */
+}
+
+
+#base .content .work-experience,
+#base .content .project{
+    width: 100%;
+    padding: 0 20px 40px 40px;
 }
