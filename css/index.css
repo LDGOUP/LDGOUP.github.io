@@ -124,6 +124,34 @@ body{
 
 #base .content .work-experience,
 #base .content .project{
+    box-sizing: border-box;
     width: 100%;
     padding: 0 20px 40px 40px;
+    line-height: 34px;
+    color: #fff;
+}
+#base .content .work-experience ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#base .content .work-experience ul{
+    /* box-sizing: border-box; */
+    margin: 20px 20px 10px;
+}
+
+.work-experience .company li{
+    width: 40%;
+    height: 34px;
+    margin: 0 2em;
+}
+
+.work-experience .description li{
+    height: 34px;
+    margin: 0 2em;
+}
+
+.work-experience .descriptions .des{
+    text-indent: 32px;
 }
