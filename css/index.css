@@ -8,34 +8,56 @@ ol{
 }
 html,
 body{
+    position: relative;
     width:100%;
     height: 100%;
+    background-color: #ebe6e6;
 }
-#base{
-    max-width: 1400px;
-    min-height: 100%;
-    margin: 0 auto;
-    background-color: #424242;
+/* 基底背景 */
+#bg-base{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    -moz-transform:skew(5deg,5deg);
+    -webkit-transform:skew(5deg,5deg);
+    -ms-transform:skew(5deg,5deg);
+    transform:skew(5deg,5deg);
 }
 
-/* 消除myInfo和experience带来的浮动影响 */
-#base::after{
+/* 消除带来的浮动影响 */
+#bg-base::after{
     content: "";
     display: block;
     clear: both;
 }
 
-#base .myInfo{
+#bg-base li{
     float: left;
-    width: 500px;
-    height: 500px;
-    /* background-color: aliceblue; */
+    width: 300px;
+    height: 460px;
+    background-color: #fff;
+    margin: 10px;
 }
 
-#base .myInfo img{
+#base{
     display: inline-block;
-    width: 215px;
-    height: 300px;
-    border: 10px solid yellow;
-    border-radius: 50%;
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    /* background: linear-gradient(to left bottom, #9e43ff, #fd9adb, #d9a25e); */
+    background: linear-gradient(to left bottom, #0c4ab1, #6176ff,#8a99ff);
+    opacity: 0.6;
+}
+
+#base .content{
+    width: 1200px;
+    margin: 100px auto;
+    background-color: #fff;
+}
+
+#base .content::after{
+    content: "";
+    display: block;
+    clear: both;
 }
