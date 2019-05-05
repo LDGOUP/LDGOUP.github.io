@@ -123,6 +123,8 @@ body{
 
 
 #base .content .work-experience,
+#base .content .independent-study,
+#base .content .self-assessment,
 #base .content .project{
     box-sizing: border-box;
     width: 100%;
@@ -136,7 +138,10 @@ body{
     clear: both;
 }
 
-#base .content .work-experience ul{
+#base .content .work-experience ul,
+#base .content .independent-study ul,
+#base .content .self-assessment ul
+{
     /* box-sizing: border-box; */
     margin: 20px 20px 10px;
 }
@@ -147,11 +152,16 @@ body{
     margin: 0 2em;
 }
 
-.work-experience .description li{
-    height: 34px;
+.work-experience .description li,
+#base .content .independent-study ul li,
+#base .content .self-assessment ul li{
+    /* height: 34px; */
     margin: 0 2em;
+    text-align: left;
 }
 
-.work-experience .descriptions .des{
-    text-indent: 32px;
+.work-experience .description .des,
+#base .content .independent-study ul li,
+#base .content .self-assessment ul li{
+    text-indent: 2em;
 }
