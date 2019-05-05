@@ -56,7 +56,7 @@ body{
 #base .content{
     width: 1000px;
     margin: 100px auto;
-    background-color: #ebe6e662;
+    /* background-color: #ebe6e662; */
     color: #fff;
 }
 
