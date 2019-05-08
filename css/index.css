@@ -65,6 +65,10 @@ body{
     display: block;
     clear: both;
 }
+/* #base .content span{
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
 
 #base .content p{
     width: 100px;
